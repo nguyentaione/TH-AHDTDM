@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+void haiSoBoiCua7()
+{
+    int i;
+    printf("Cac so nguyen co 2 chu so va la boi cua 7 la:\n");
+    for (i = 10; i <= 99; i++) 
+    {
+        if (i % 7 == 0) 
+        {
+            printf("%d\n", i);
+        }
+    }
+    
+    
+}
+int main(void)
+{
+    printf("Hai so nguyen boi so cua 7 la: ");
+    printf("\n");
+    haiSoBoiCua7();
+    return 0;    // Your code here!
+    
+}
