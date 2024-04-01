@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <math.h>
+
+int kiemTraSCP(int num) {
+    int sqrtNum = sqrt(num);
+    return (sqrtNum * sqrtNum == num);
+}
+
+void demVaInSCP(int n) {
+    printf("Cac so chinh phuong nho hon %d la:\n", n);
+    int count = 0;
+    for (int i = 1; i < n; i++) {
+        if (kiemTraSCP(i)) {
+            printf("%d ", i);
+            count++;
+        }
+    }
+    printf("\nTong so chinh phuong: %d\n", count);
+}
+
+int main() {
+    int n;
+    printf("Nhap vao mot so nguyen duong n: ");
+    scanf("%d", &n);
+    demVaInSCP(n);
+    return 0;
+}
